@@ -1,16 +1,13 @@
 import { motion } from "framer-motion";
-
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 
 type GlowCardProps = {
-  children: ReactNode;
+  children: React.ReactNode;
+  className?: string;
 };
 
-function GlowCard({ children }: GlowCardProps) {
-  const [position, setPosition] = useState({
-    x: 0,
-    y: 0,
-  });
+function GlowCard({ children, className = "" }: GlowCardProps) {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -33,7 +30,7 @@ function GlowCard({ children }: GlowCardProps) {
         stiffness: 200,
         damping: 20,
       }}
-      className="
+      className={`
         relative
         overflow-hidden
         rounded-3xl
@@ -42,7 +39,8 @@ function GlowCard({ children }: GlowCardProps) {
         bg-white/[0.03]
         backdrop-blur-xl
         p-8
-      "
+        ${className}
+      `}
     >
       {/* Dynamic Glow */}
       <div
