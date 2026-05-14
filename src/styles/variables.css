@@ -1,0 +1,21 @@
+:root {
+  --bg-primary: #050816;
+  --bg-secondary: #0b1120;
+
+  --neon-pink: #ff00ff;
+  --neon-cyan: #00ffff;
+  --neon-purple: #8b5cf6;
+  --neon-blue: #3b82f6;
+
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+
+  --shadow-neon:
+    0 0 10px rgba(255, 0, 255, 0.3), 0 0 20px rgba(255, 0, 255, 0.2),
+    0 0 40px rgba(255, 0, 255, 0.1);
+
+  --gradient-primary: linear-gradient(135deg, #00ffff, #8b5cf6, #ff00ff);
+}
