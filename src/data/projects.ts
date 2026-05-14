@@ -40,7 +40,7 @@ export const projects = [
 
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
 
-    github: "https://github.com/Pavan-Adapa/portfolio_website",
+    github: "https://github.com/Pavan-Adapa/portfolio_website.git",
 
     live: "https://portfolio-website-rho-ruby-41.vercel.app/",
   },
